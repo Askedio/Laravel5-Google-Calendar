@@ -1,0 +1,16 @@
+{
+    "name": "askedio/laravel5-google-calendar",
+    "description": "Google Calendar REST API for Laravel 5",
+    "keywords": ["laravel", "google calendar"],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*"
+     },
+    "autoload": {
+        "psr-4": {
+            "Askedio\\Laravel5GoogleCalendar\\": "src/"
+        }
+    }
+}
