@@ -48,3 +48,10 @@ Set the calendar to an empty value when using readCalendar to get a list of cale
   Calendar::setVar('start', 'yesterday')
   Calendar::setVar('end', 'today')
 ~~~
+
+
+# Creating & Updating
+Creating sends a POST request with the array provided. Updating sents a PATCH request with the array provided.
+
+Check the Google Calendar API documentation for the values to be provided. You can also view mine here:
+https://github.com/Askedio/BillReminder/blob/master/src/app/Helpers/BillReminder.php
