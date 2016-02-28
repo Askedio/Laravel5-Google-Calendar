@@ -14,27 +14,27 @@ I needed access to Google Calendar and their PHP SDK failed for me on to many le
 
 Declare use statements to access Calendar and CalendarEvent.
 ~~~
-  use Askedio\Laravel5GoogleCalendar\Calendar
-  use Askedio\Laravel5GoogleCalendar\Events as CalendarEvent
+  use Askedio\Laravel5GoogleCalendar\Calendar;
+  use Askedio\Laravel5GoogleCalendar\Events as CalendarEvent;
 ~~~
 
 
 # Event Options
 
 ~~~
-  CalendarEvent::createEvents([])
-  CalendarEvent::readEvents(eventId)
-  CalendarEvent::updateEvents(eventId, [])
-  CalendarEvent::deleteEvents(eventId)
+  CalendarEvent::createEvents([]);
+  CalendarEvent::readEvents($eventId);
+  CalendarEvent::updateEvents($eventId, []);
+  CalendarEvent::deleteEvents($eventId);
 ~~~
 
 # Calendar Options
 
 ~~~
-  Calendar::createCalendar([])
-  Calendar::readCalendar()
-  Calendar::updateCalendar([])
-  Calendar::deleteCalendar()
+  Calendar::createCalendar([]);
+  Calendar::readCalendar();
+  Calendar::updateCalendar([]);
+  Calendar::deleteCalendar();
 ~~~
 
 # Class Options
@@ -42,11 +42,11 @@ Set the calendar to an empty value when using readCalendar to get a list of cale
 
 ~~~
   # Change calendar
-  Calendar::setVar('calendar', 'primary')
+  Calendar::setVar('calendar', 'primary');
 
   # Change start/end time
-  Calendar::setVar('start', 'yesterday')
-  Calendar::setVar('end', 'today')
+  Calendar::setVar('start', 'yesterday');
+  Calendar::setVar('end', 'today');
 ~~~
 
 
