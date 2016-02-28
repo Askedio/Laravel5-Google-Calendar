@@ -23,7 +23,7 @@ Declare use statements to access Calendar and CalendarEvent.
 
 ~~~
   CalendarEvent::createEvents([]);
-  CalendarEvent::readEvents($eventId);
+  CalendarEvent::readEvents($eventId=false); # false to read all events in time frame
   CalendarEvent::updateEvents($eventId, []);
   CalendarEvent::deleteEvents($eventId);
 ~~~
